@@ -69,7 +69,7 @@
     display: flex;
     font-size: 1.3rem;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: row;
     margin-top: 20px;
     width: 60%;
@@ -79,15 +79,40 @@
     margin-right: 0.4em;
 }
 
-.text strong {
-    white-space: nowrap;
-    word-break: keep-all;
-    min-width: 160px;
-    flex-shrink: 0;
-}
-
 .text strong a{
     color: inherit;
+}
+
+.experience-table {
+    display: table;
+    width: 60%;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    border-collapse: separate;
+    border-spacing: 0 1.2em;
+}
+
+.experience-row {
+    display: table-row;
+}
+
+.exp-label {
+    display: table-cell;
+    white-space: nowrap;
+    vertical-align: top;
+    padding-right: 1.2em;
+    font-weight: bold;
+}
+
+.exp-label a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.exp-desc {
+    display: table-cell;
+    vertical-align: top;
+    line-height: 1.5;
 }
 
 .contacts{
